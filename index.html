@@ -2,10 +2,85 @@
 <html>
 <head>
   <title>My Webchat</title>
+  <style>
+    /* Estilos personalizados para Botpress Webchat */
+
+    #webchat {
+      --botMessageBackground: #f1f5f9;
+      --userMessageBackground: #3b82f6;
+      --userMessageColor: #ffffff;
+      --botMessageColor: #1e293b;
+      --backgroundColor: #ffffff;
+      --fontColor: #1e293b;
+      --buttonColor: #3b82f6;
+      --buttonTextColor: #ffffff;
+      --buttonHoverBackground: #2563eb;
+      --borderRadius: 12px;
+      --fontFamily: 'Segoe UI', sans-serif;
+    }
+
+    .webchat-bot-message,
+    .webchat-user-message {
+      border-radius: 16px;
+      padding: 10px 14px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .webchat-container {
+      background-color: var(--backgroundColor) !important;
+      font-family: var(--fontFamily);
+    }
+
+    .webchat-user-message {
+      background-color: var(--userMessageBackground);
+      color: var(--userMessageColor);
+      align-self: flex-end;
+    }
+
+    .webchat-bot-message {
+      background-color: var(--botMessageBackground);
+      color: var(--botMessageColor);
+      align-self: flex-start;
+    }
+
+    .webchat-send-input {
+      border-radius: 9999px;
+      border: 1px solid #cbd5e1;
+      padding: 10px 15px;
+      font-size: 14px;
+    }
+
+    .webchat-send-button {
+      background-color: var(--buttonColor);
+      color: var(--buttonTextColor);
+      border-radius: 50%;
+      transition: background-color 0.3s ease;
+    }
+
+    .webchat-send-button:hover {
+      background-color: var(--buttonHoverBackground);
+    }
+
+    .webchat-quick-reply {
+      background-color: #e2e8f0;
+      color: #1e293b;
+      border-radius: 9999px;
+      padding: 6px 12px;
+      margin: 4px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .webchat-quick-reply:hover {
+      background-color: #cbd5e1;
+    }
+  </style>
 </head>
 <body>
-    Hola Equipo, el chat está en la parte inferior derecha.
-    Un saludo :)
+  Hola Equipo, el chat está en la parte inferior derecha.<br>
+  Un saludo :)
+
   <script src="https://cdn.botpress.cloud/webchat/v2.3/inject.js"></script>
   <script src="https://files.bpcontent.cloud/2025/04/07/10/20250407103820-3GGLIVHH.js"></script>
 </body>
